@@ -1,0 +1,21 @@
+<svg width="198" height="832" viewBox="0 0 198 832" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M196.5 0.5V22.5H1.5V826.5" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 68L1 68" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 340L1 340" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 204L1 204" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 502L1 502" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 690L1 690" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<path d="M54 826L1 826" stroke="#0159DC" stroke-width="2" stroke-dasharray="4 4"/>
+<circle opacity="0.5" cx="50" cy="68" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="67.9999" r="3.6" fill="#FEAE33"/>
+<circle opacity="0.5" cx="50" cy="204" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="204" r="3.6" fill="#FEAE33"/>
+<circle opacity="0.5" cx="50" cy="340" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="340" r="3.6" fill="#FEAE33"/>
+<circle opacity="0.5" cx="50" cy="502" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="502" r="3.6" fill="#FEAE33"/>
+<circle opacity="0.5" cx="50" cy="690" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="690" r="3.6" fill="#FEAE33"/>
+<circle opacity="0.5" cx="50" cy="826" r="6" fill="#FEAE33"/>
+<circle cx="49.9984" cy="826" r="3.6" fill="#FEAE33"/>
+</svg>
