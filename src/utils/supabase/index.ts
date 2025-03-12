@@ -20,15 +20,15 @@ export const createSupabaseServerClient = function (isServerComponent = false) {
     NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
     {
       cookies: {
-        get(name) {
+        async get(name) {
           // get cookie by name
-          const cookieStore = cookies();
+          const cookieStore = await cookies();
           return cookieStore.get(name)?.value;
         },
-        set(name, value, options) {
+        async set(name, value, options) {
           if (isServerComponent) return;
           // set cookie
-          const cookieStore = cookies();
+          const cookieStore = await cookies();
           // cookieStore.set(name, value, options);
           cookieStore.set(name, value, {
             ...options,
@@ -37,10 +37,10 @@ export const createSupabaseServerClient = function (isServerComponent = false) {
             ...secureOptions,
           });
         },
-        remove(name, options) {
+        async remove(name, options) {
           if (isServerComponent) return;
           // remove cookie
-          const cookieStore = cookies();
+          const cookieStore = await cookies();
           cookieStore.set(name, "", {
             ...options,
             // secure: true,

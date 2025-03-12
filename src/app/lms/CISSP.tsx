@@ -12,11 +12,18 @@ import ClientSwiper from "@/components/swiper/ClientSwiper";
 import SecurityConsulting from "@/components/cards/SecurityConsulting";
 // import { mainCardData } from "@/components/data/QualimatrixSecurityConsulting";
 import ServiceFaqAccordion from "@/components/cards/ServiceFaqAccordion";
+import KnowMoreForm from "@/components/forms/KnowMoreForm";
+import CorporateTrainingForm from "@/components/forms/CorporateTraining";
+import RegisterAccountForm from "@/components/forms/RegisterAccount";
+import ScheduleModal from "@/components/forms/ScheduleModal";
 // import CorporateTrainingForm from "@/components/forms/CorporateTrainingForm";
 
 const CISSP = () => {
   const { theme } = useTheme();
   const [bgColor, setBgColor] = useState("");
+
+  const [modalShow, setModalShow] = useState(false);
+
 
   useEffect(() => {
     if (theme === "light") {
@@ -206,9 +213,14 @@ const CISSP = () => {
                     recognized for their practices to make a company globally
                     secured.
                   </p>
-                  <Link href="/" className="col qt-cissp-hero-btn">
+                  <button
+                    onClick={(e) => {
+                      setModalShow(true);
+                      e.preventDefault();
+                    }}
+                    className="col qt-cissp-hero-btn">
                     <>View Schedule</>
-                  </Link>
+                  </button>
 
                   <div className="rating-container">
                     <div className="py-1 px-3">
@@ -526,11 +538,19 @@ const CISSP = () => {
           </div>
         </section>
 
-        {/* Request for corporate training */}
-        {/* <section>
-          Request for corporate training
-          <CorporateTrainingForm />
-        </section> */}
+
+        <section className={`qt-development-contact-section ${theme}-theme`}>
+          {" "}
+          <div className="container">
+            <div className="row">
+              <CorporateTrainingForm />
+
+            </div>
+
+          </div>
+        </section>
+
+
 
         {/* Why Choose Us? */}
         <section>
@@ -581,6 +601,10 @@ const CISSP = () => {
           </div>
         </section>
       </div>
+
+      <ScheduleModal show={modalShow} onHide={() => setModalShow(false)} />
+
+      {/* <RegisterAccountForm show={modalShow} onHide={() => setModalShow(false)} /> */}
     </>
   );
 };
