@@ -52,7 +52,7 @@ const SecurityConsulting: React.FC<{ cardData: CardItem[] }> = ({
   return (
     <div>
       <div className="qt-service-main-block">
-        <div className="cards">
+        <div className="cards-1">
           {cardData.map((item, ind) => {
             const id = item.title.toLowerCase().replace(/\s+/g, "-");
             const isSelected = id === selectedCard;

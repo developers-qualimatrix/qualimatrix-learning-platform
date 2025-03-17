@@ -16,6 +16,8 @@ import KnowMoreForm from "@/components/forms/KnowMoreForm";
 import CorporateTrainingForm from "@/components/forms/CorporateTraining";
 import RegisterAccountForm from "@/components/forms/RegisterAccount";
 import ScheduleModal from "@/components/forms/ScheduleModal";
+import CourseDescriptionAccordion from "@/components/cards/CourseDescriptionAccordion";
+import TrainingCardGrid from "@/components/cards/TrainingCard";
 // import CorporateTrainingForm from "@/components/forms/CorporateTrainingForm";
 
 const CISSP = () => {
@@ -23,7 +25,6 @@ const CISSP = () => {
   const [bgColor, setBgColor] = useState("");
 
   const [modalShow, setModalShow] = useState(false);
-
 
   useEffect(() => {
     if (theme === "light") {
@@ -135,53 +136,128 @@ const CISSP = () => {
   const accordionData = [
     {
       id: 1,
-      title:
-        "What sets between typical application security testing from API security testing?",
+      title: "Are there any group discounts for classroom training programs?",
       description:
-        " To provide thorough coverage of any vulnerabilities, API security testing focuses solely on the interfaces and endpoints exposed by APIs, whereas traditional application security testing concentrates on the application layer.",
+        "Yes, we provide group discounts based on our set offer packages for classroom training programs. Please contact us at support@qualimatrix.tech, to get more details on discount packages.",
     },
     {
       id: 2,
-      title: "How often should security tests be carried out for APIs?",
+      title: "Will this training session include materials?",
       description:
-        "Whenever there are major modifications or upgrades to the API, as well as part of the software development lifecycle (SDLC), frequent API security testing should be carried out.",
+        "Yes, this training session will be coming with materials just after the training session to help students study whenever and wherever they want.   ",
     },
     {
       id: 3,
-      title:
-        "Will automated tools be adequate for checking API security on their own?",
+      title: "Are the practice tests necessary to be taken during the course?",
       description:
-        "While automated technologies can be useful in identifying some vulnerabilities, skilled cybersecurity professionals must do human testing to uncover complex security concerns and accurately estimate dangers that may arise in the real world.",
-    },
-  ];
-  const whyChooseUsData = [
-    {
-      id: 1,
-      imgSrc: "/assets/services/cybersecurity-consulting/pci-dss.png",
-      title: "PCI DSS",
-      description:
-        "        Qualimatrix caters to a massive range of PCI DSS Compliance consulting services. We are offering PCI Compliance, PA DSS Compliance, and PCI SSF Compliance. ",
-    },
-    {
-      id: 2,
-      imgSrc: "/assets/services/cybersecurity-consulting/iso27001.png",
-      title: "ISO27001",
-      description:
-        "We are preferred for ISO27001 Audit and certification For our user-centric custom approach for performing assessment. Our ISO consulting ensures a healthy alliance for such compliances. ",
-    },
-    {
-      id: 3,
-      imgSrc: "/assets/services/cybersecurity-consulting/gdpr.png",
-      title: "GDPR",
-      description:
-        "Oriented and detailed GDPR compliance assessments for businesses of every range. A dedicated Cyberteam for supporting businesses to make a healthy shift. to GDPR.",
+        "Yes, our practice tests make students ready for best results, therefore, they are officially compulsory to be taken.",
     },
     {
       id: 4,
-      imgSrc: "/assets/services/cybersecurity-consulting/hipaa.png",
-      title: "HIPAA",
+      title: "Can this course be attended virtually/Online?",
       description:
-        "      The HIPAA compliance program can be put into action. We now have to deal with more than simply HIPAA compliance; ransomware attacks, phishing tactics, and other forms of cybercrime are now targeting the healthcare industry and directly compromising patient safety and data.",
+        "We believe students learn better in physical classes. Though if any inconvenience, our portal gives live class option to students so they do not miss out on any learning session.",
+    },
+  ];
+
+  const accordionCourseDescriptionData = [
+    {
+      id: 1,
+      title: "Training Delivery Style",
+      content: [
+        "Our CISSP certification provides varied interactive sessions to engage, test, and analyze students’ growth and skill development. These practices typically last for 1-2 hours.",
+        "The training sessions will provide our students with insight into technical skill development. It turns participants into top-notch cybersecurity program experts. The core features of our training program include:",
+        [
+          "Hands-on Labs and Simulations",
+          "Comprehensive exam assistance and preparation",
+          "Real-world case connectivity",
+          "Interactive Discussions",
+          "Top-qualified expert-led instructions",
+          "Best Study Materials",
+        ],
+      ],
+    },
+    {
+      id: 2,
+      title: "Benefits of CISSP Training",
+      content: [
+        "Participants gain access from the crucial 8 domains of CBK (Common Body of Knowledge).",
+        "Get global recognition with official CISSP certification.",
+        "Get customized learning solutions from top-qualified tutors with lifetime access to the recorded sessions.",
+        "Advance your career options in roles like CISO (Chief Information Security Officer) or Security Manager.",
+        "Learn about ISO 27001, HIPAA, and GDPR for company regulations and compliance.",
+      ],
+    },
+    {
+      id: 3,
+      title: "Faculty",
+      content: [
+        "Our trainers are certified cybersecurity professionals, holding experience in their teaching values. They guide their students with connective teaching patterns as per each individual. From giving customized solutions to motivating them with real-world examples, they are our true heroes.",
+        "Our Faculty members include:",
+        [
+          "15+ years of expertise",
+          "Trained more than 5000 professionals",
+          "50% Trainer success records",
+        ],
+      ],
+    },
+  ];
+
+  const whyChooseUsData = [
+    {
+      id: 1,
+      imgSrc: "/lms/icon1.png",
+      title: "Accredited Courseware",
+      description:
+        "Our materials are officially qualified for top CISSP training. This helps our students excel in certification exams. Our in-depth course insights are specially designed by industry experts for the highest-quality learning.",
+    },
+    {
+      id: 2,
+      imgSrc: "/lms/icon2.png",
+      title: "Experienced Instructors",
+      description:
+        "We hire highly professional tutors in CISSP who have good training experience. They come with expert guidance, real-world examples, and in-depth insights to conquer security solutions.",
+    },
+    {
+      id: 3,
+      imgSrc: "/lms/icon3.png",
+      title: "Practical Training",
+      description:
+        "Our approach to teaching includes interactive sessions and one-to-one Q&A programs, enabling our students to be clear on every step of their learning journey.",
+    },
+    {
+      id: 4,
+      imgSrc: "/lms/icon4.png",
+      title: "99.3% Passing Rate",
+      description:
+        "  We shape a bright future for our students. Our tutors have guided 1000+ students with a structured learning path. Our students achieved 99.3% in their CISSP exam. The success rate at Qualimatrix is definite.",
+    },
+  ];
+
+  const trainingData = [
+    {
+      title: "1-on-1 Training",
+      points: [
+        "Learn at your own time",
+        "Personalized tutor assistance",
+        "Focused attention",
+      ],
+    },
+    {
+      title: "Group Training",
+      points: [
+        "Cost effective",
+        "Networking and Team bonding",
+        "Diverse Q&A sessions",
+      ],
+    },
+    {
+      title: "Corporate Training",
+      points: [
+        "Access whenever & wherever you need",
+        "Customized training",
+        "Team collaboration",
+      ],
     },
   ];
 
@@ -189,6 +265,11 @@ const CISSP = () => {
     <>
       <div>
         {/* Hero Section Started */}
+
+        <header className="header-logo">
+          <img src="/assets/logo.png" />
+        </header>
+
         <section
           className={`qt-hero-section ${theme}-theme`}
           style={{ backgroundColor: bgColor }}
@@ -204,7 +285,9 @@ const CISSP = () => {
                     </span>{" "}
                     <span style={{ color: "#FEAE33" }}>(CISSP)</span>
                   </h1>
-                  <p className={`qt-description ${theme}-theme mb-5 w-[400]`}>
+                  <p
+                    className={`qt-description text-white ${theme}-theme mb-5`}
+                  >
                     Get certified officially to manage, engineer, and design
                     security domains. Our training program includes
                     cybersecurity skill development, providing global
@@ -218,46 +301,41 @@ const CISSP = () => {
                       setModalShow(true);
                       e.preventDefault();
                     }}
-                    className="col qt-cissp-hero-btn">
+                    className="col qt-cissp-hero-btn "
+                  >
                     <>View Schedule</>
                   </button>
 
-                  <div className="rating-container">
-                    <div className="py-1 px-3">
-                      <span className="highlight">4.5</span>{" "}
-                      <span className="qt-description">
-                        {" "}
-                        Rating on G Reviews
-                      </span>
-                      <br />
-                      <span className="stars">★★★★★</span>
-                    </div>
-                    <div className="divider"></div>
-                    <div className="py-1 px-3">
-                      <span className="highlight">5000+</span>
-                      <span className="qt-description"> Professionals</span>
-                      <br />
-                      <span className="qt-description">Enrolled</span>
-                    </div>
-                    <div className="divider"></div>
-                    <div className="py-1 px-3">
-                      <span className="highlight">98.3%</span>
-                      <span className="qt-description"> Success Rate</span>
-                      <br />
-                      <span className=""> </span>
+                  <div className="rating-container mt-10">
+                    <div className="row qt-description text-white">
+                      <div className="col">
+                        <div>
+                          <strong>4.5</strong> Ratings on Reviews
+                        </div>
+                        <div>
+                          <img src="/lms/star.png" />
+                        </div>
+                      </div>
+                      <div className="qt-line"></div>
+                      <div className="col">
+                        <p>
+                          <strong>5000+</strong> Professionals Enrolled
+                        </p>
+                      </div>
+                      <div className="qt-line"></div>
+                      <div className="col">
+                        <p>
+                          <strong>98.3%</strong> Success Rate
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="qt-hero-3">
                 <div className="qt-hero-content-wrap">
-                  <div className="qt-logo-wrapper d-flex justify-content-center align-items-center">
-                    <Image
-                      alt=""
-                      width={100}
-                      height={300}
-                      src={"/assets/cisst/cissp_hero_image.png"}
-                    ></Image>
+                  <div className="qt-girl-img">
+                    <img src="/assets/girl-teaching.png" />
                   </div>
                 </div>
               </div>
@@ -318,7 +396,7 @@ const CISSP = () => {
           {/* Learning Outcomes / Program Delivery */}
         </section>
         <section className={`qt-case-study-main-section ${theme}-theme`}>
-          <div className="container pb-5">
+          <div className="container">
             <div className="row">
               <div className={`qt-case-study-main-block ${theme}-theme`}>
                 <div className="cards">
@@ -326,7 +404,9 @@ const CISSP = () => {
                     <h1 className={`qt-title-3 ${theme}-theme mb-3`}>
                       Learning Outcome
                     </h1>
-                    <p>The participants would be able to:</p>
+                    <p className={`qt-description ${theme}-theme`}>
+                      The participants would be able to:
+                    </p>
                     <div className="text-left">
                       <SolutionCardList cardList={cardData2} />
                     </div>
@@ -335,7 +415,9 @@ const CISSP = () => {
                     <h1 className={`qt-title-3 ${theme}-theme mb-3`}>
                       Program Deliverables
                     </h1>
-                    <p>Deliverables of this program include:</p>
+                    <p className={`qt-description ${theme}-theme`}>
+                      Deliverables of this program include:
+                    </p>
                     <div className="text-left">
                       <SolutionCardList cardList={cardData3} />
                     </div>
@@ -344,67 +426,61 @@ const CISSP = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        <section>
           {/* Other Training OPtions */}
           <div className={`qt-service-description-section ${theme}-theme`}>
             <div className="container">
               <div className="row align-items-center">
-                <div className="col text-center">
+                <div className="col text-center mb-5">
                   <h1 className={`qt-title ${theme}-theme mb-3`}>
                     Other Training Options
                   </h1>
                   <p className={`qt-description ${theme}-theme`}>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour,
+                    Choose how you want to learn with us!
                   </p>
-                  <div className="text-center">
-                    {/* <SolutionCardList cardList={cardData1} /> */}
-                    <div className="qt-cisst-trainingcard-container">
-                      {trainingTypes.map((training, index) => (
-                        <TrainingCard
-                          key={index}
-                          title={training.title}
-                          points={training.points}
-                        />
-                      ))}
-                    </div>
-                  </div>
                 </div>
+                <TrainingCardGrid data={trainingData} />;
               </div>
             </div>
           </div>
           <div>
             {/* Accordian Section */}
-            <CourseAccordion
+            {/* <CourseAccordion
               title="Eligibility"
               content="This section contains eligibility criteria details."
-            />
+            /> */}
           </div>
         </section>
 
+        <section className={`qt-main-cyber-section ${theme}-theme`}>
+          <div className="container">
+            <div className="row text-center mb-5">
+              <div className="col text-center mb-5">
+                <h1 className={`qt-title ${theme}-theme`}>
+                  Course Curriculum & Course Details
+                </h1>
+              </div>
+              <CourseDescriptionAccordion
+                accordionData={accordionCourseDescriptionData}
+              />
+            </div>
+          </div>
+        </section>
         {/*  */}
         {/* Audit below main section starts */}
         <section className={`qt-audit-main-bottom-section ${theme}-theme`}>
           <div className="container">
             <div className="row">
               <div className="col-lg-7">
-                <h1 className={`qt-title ${theme}-theme`}>
-                  Certified Information Systems Security Professional Exam
-                  Format
-                </h1>
+                <h1 className={`qt-title ${theme}-theme`}>CISSP EXAM FORMAT</h1>
                 <p className={`qt-description ${theme}-theme mb-5`}>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humor.
+                  Comprehensive overview of CISSP Structure and format
                 </p>
 
                 <ul className={`qt-description ${theme}-theme`}>
-                  <li>
-                    <span>
-                      <TickIcon />
-                    </span>
-                    <p>Exam Format - Objective Type, Multiple Choice</p>
-                  </li>
+                  <p>Exam Format - Objective Type, Multiple Choice</p>
                   <li>
                     <span>
                       <TickIcon />
@@ -442,15 +518,7 @@ const CISSP = () => {
                     <p>Closed book</p>
                   </li>
                 </ul>
-                <Link
-                  href="/"
-                  className="col qt-cissp-hero-btn"
-                  style={{
-                    marginTop: "20px",
-                    display: "flex",
-                    width: "200px",
-                  }}
-                >
+                <Link href="/" className="col qt-cissp-hero-btn">
                   <>Register Now</>
                 </Link>
               </div>
@@ -490,7 +558,7 @@ const CISSP = () => {
           </div>
         </section>
         {/* Register For demp class */}
-        <section>Register For demp class</section>
+        {/* <section>Register For demp class</section> */}
 
         {/* Client Section Starts */}
         <section
@@ -499,14 +567,17 @@ const CISSP = () => {
         >
           <div className="container">
             <h1 className={`qt-title ${theme}-theme text-center`}>
-              What Our Participant Say
+              WHAT OUR PARTICIPANTS SAY
             </h1>
-            <p className={`qt-description ${theme}-theme mb-3 text-center`}>
+            <h2 className={`qt-title-2 ${theme}-theme mb-3 text-center`}>
+              <span style={{ color: "#0159DC" }}>Voice of our learners</span>
+            </h2>
+            {/* <p className={`qt-description ${theme}-theme mb-3 text-center`}>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even
               slightly believable.
-            </p>
+            </p> */}
 
             <div className={`qt-client-block ${theme}-theme p-0`}>
               <ClientSwiper />
@@ -521,13 +592,13 @@ const CISSP = () => {
             <div className="row">
               <div className="col text-center mb-5">
                 <h1 className={`qt-title ${theme}-theme`}>
-                  Frequently Asked Questions (FAQs)
+                  Know answers to your questions
                 </h1>
-                {/* <h2 className={`qt-title-2 ${theme}-theme mb-3`}>
-                <span style={{ color: "#0159DC" }}>
-                  Frequently Asked Questions (FAQs)
-                </span>
-              </h2> */}
+                <h2 className={`qt-title-2 ${theme}-theme mb-3`}>
+                  <span style={{ color: "#0159DC" }}>
+                    Frequently Asked Questions (FAQs)
+                  </span>
+                </h2>
               </div>
             </div>
             <div className="row">
@@ -538,19 +609,14 @@ const CISSP = () => {
           </div>
         </section>
 
-
         <section className={`qt-development-contact-section ${theme}-theme`}>
           {" "}
           <div className="container">
             <div className="row">
               <CorporateTrainingForm />
-
             </div>
-
           </div>
         </section>
-
-
 
         {/* Why Choose Us? */}
         <section>
@@ -563,10 +629,10 @@ const CISSP = () => {
                 <div className="col text-center mb-5">
                   <h1 className={`qt-title ${theme}-theme`}>Why Choose Us?</h1>
                   <p className={`qt-description ${theme}-theme`}>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humor, or randomized words which don't
-                    look even slightly believable.
+                    We commit to making our students the best CISSP
+                    Professionals. Our agenda is to provide them with the best
+                    skill development training and make them information
+                    security techs.
                   </p>
                 </div>
               </div>
@@ -579,23 +645,22 @@ const CISSP = () => {
         <section className={`qt-case-study-main-section ${theme}-theme`}>
           <div className="container mt-5 pb-5">
             <div className="row align-items-center">
-              <div className="col-lg-6">
-                <h1 className={`qt-title ${theme}-theme mb-3`}>About Us</h1>
-                <p className={`qt-description ${theme}-theme mb-5`}>
-                  A US based Healthcare Service Provider in the field of
-                  Intervention Cardiology care, since 2005. Expanded in 12
-                  states of USA with more than 150 branches and staff over 2500
-                  with a patient base of more than 150000 Patients and various
-                  age levels and demographics. The client has now moved from
-                  traditional healthcare practices to online consultation and
-                  making the brand available to the patients across the states
-                  with 24/7 healthcare availability.
-                </p>
-              </div>
               <div className="col-lg-6 text-center">
                 <div className={`qt-case-study-img-wrap ${theme}-theme `}>
                   <img src="/assets/case-study/ylanes-case-study.png" alt="" />
                 </div>
+              </div>
+              <div className="col-lg-6">
+                <h1 className={`qt-title ${theme}-theme mb-3`}>About Us</h1>
+                <p className={`qt-description ${theme}-theme mb-5`}>
+                  We are a team of qualified experts known for shaping the minds
+                  of corporate professionals. Our training sessions includes top
+                  qualidifed tutors. Our CISSP course certification provides
+                  opportunities for individuals to grow and get recognized in
+                  the corporate world. Qualimatrix domains are a guide to
+                  cybersecurity concepts, making our students experts in global
+                  security regulations and standards.
+                </p>
               </div>
             </div>
           </div>

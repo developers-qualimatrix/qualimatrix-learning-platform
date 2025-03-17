@@ -21,69 +21,46 @@ const ClientSwiper = () => {
 
   const testimonials = [
     {
-      name: "Niket Shrivastava",
-      country: "Prep Monkey",
-      rating: 5,
-      description:
-        "Found the perfect QA company. Attention to detail and commitment to client satisfaction is unparalleled. Will use their services again.",
-      imagePath: "/assets/home/male-client.png",
-    },
-    {
-      name: "Keval Mehta",
-      country: "Ylanes",
-      rating: 5,
-      description:
-        "Amazed by the professionalism and expertise displayed by Qualimatrix. Went above and beyond to ensure my satisfaction. Earned a client who will recommend them.",
-      imagePath: "/assets/home/male-client.png",
-    },
-    {
-      name: "Khetanl Mehta",
-      country: "Defi67",
-      rating: 5,
-      description:
-        "Connected with Qualimatrix. The team is extremely professional and qualified. Product is of excellent quality. Couldn’t be happier with my decision.",
-      imagePath: "/assets/home/male-client.png",
-    },
-    {
-      name: "Mohit Goswami",
-      country: "Opigo",
-      rating: 5,
-      description:
-        "Working with Qualimatrix for the past two years. Helped programmers speed up and improve the process. QAs are extremely professional and helpful.",
-      imagePath: "/assets/home/male-client.png",
-    },
-    {
-      name: "Jessica N",
-      country: "Applied",
-      rating: 5,
-      description:
-        "Amazing experience with Qualimatrix! Top-notch QA services. Exceeded expectations. Positive attitude even after multiple change requests. Delivers with high stability.",
-      imagePath: "/assets/home/female-client.png",
-    },
-    {
       name: "Floyd Miles",
-      country: "VibeSocialMusic",
+      // country: "Prep Monkey",
       rating: 5,
       description:
-        "Identified potential issues and provided clear, actionable reports. Made it easy for our development team to address bugs. Collaboration with our developers was seamless.",
+        "This course was very insightful. My tutor was skilled and knew what he was teaching. I am glad I chose to learn from Qualimatrix. ",
+      imagePath: "/assets/home/male-client.png",
+    },
+    {
+      name: "Courtney Henry",
+      // country: "Ylanes",
+      rating: 5,
+      description:
+        " I didn't expect this course to be this amazing. Initially, I was uncomfortable as it was group training, but my tutor was very supportive. He made sure I was comfortable and maximizing my learning.",
+      imagePath: "/assets/home/male-client.png",
+    },
+
+    {
+      name: "Ralph Edwards",
+      // country: "Opigo",
+      rating: 5,
+      description:
+        "Qualimatrix has quality course materials and the best certified tutors. I am more clear with cybersecurity and its concepts now. I am fully satisfied with my investment in this course. The tutors, materials, exams, and network security are amazing here. ",
       imagePath: "/assets/home/male-client.png",
     },
     {
       name: "Floyd Miles",
-      country: "NIQ",
+      // country: "Prep Monkey",
       rating: 5,
       description:
-        "Project completed on schedule. Qualimatrix was always responsive to our inquiries and concerns. Professionalism and adherence to timelines were impressive.",
+        "This course was very insightful. My tutor was skilled and knew what he was teaching. I am glad I chose to learn from Qualimatrix. ",
       imagePath: "/assets/home/male-client.png",
     },
-    //  {
-    //    name: "Floyd Miles",
-    //    country: "VoltUp",
-    //    rating: 5,
-    //    description:
-    //      "Satisfied with the testing services provided by Qualimatrix. Attention to detail, expertise, and commitment to delivering a high-quality product have exceeded our expectations. Testing phase for our App went smoothly. Confident in the app's stability and performance thanks to their meticulous work.",
-    //    imagePath: "/assets/home/human.png",
-    //  },
+    {
+      name: "Courtney Henry",
+      // country: "Ylanes",
+      rating: 5,
+      description:
+        " I didn't expect this course to be this amazing. Initially, I was uncomfortable as it was group training, but my tutor was very supportive. He made sure I was comfortable and maximizing my learning.",
+      imagePath: "/assets/home/male-client.png",
+    },
   ];
 
   return (
@@ -148,7 +125,7 @@ const ClientSwiper = () => {
                       />
                     </div>
                     <div className="card-title">{card.name}</div>
-                    <div className="card-country">{card.country}</div>
+                    {/* <div className="card-country">{card.country}</div> */}
                     <div className="card-rating">
                       <Rating rating={card.rating} />
                     </div>

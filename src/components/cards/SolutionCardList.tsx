@@ -15,36 +15,15 @@ const SolutionCardList: React.FC<CardListProps> = ({ cardList }) => {
   const { theme } = useTheme();
   return (
     <>
-      {/* <div
-        className={`qt-description ${theme}-theme qt-case-solution-list-wrap `}
-        style={{ listStyle: "none", padding: "0" }}
-      >
-        {cardList.map((item, ind) => {
-          return (
-            <div className="qt-case-solution-list" key={ind + 1}>
-              <span>
-                <TickIcon />
-              </span>
-              <p className="m-0">{item.title}</p>
-            </div>
-          );
-        })}
-      </div> */}
-
-      <div
-        className={`qt-description ${theme}-theme grid grid-cols-1 md:grid-cols-2 gap-4`}
-        style={{ listStyle: "none", padding: "0" }}
-      >
-        {cardList.map((item, ind) => {
-          return (
-            <div className="qt-case-solution-list" key={ind + 1}>
-              <span>
-                <TickIcon />
-              </span>
-              <p className="m-0">{item.title}</p>
-            </div>
-          );
-        })}
+      <div className={`qt-description ${theme}-theme qt-key-feature`}>
+        {cardList.map((item, ind) => (
+          <div className="qt-case-solution-list" key={ind + 1}>
+            <span>
+              <TickIcon />
+            </span>
+            <p>{item.title}</p>
+          </div>
+        ))}
       </div>
     </>
   );

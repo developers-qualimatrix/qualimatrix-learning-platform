@@ -16,8 +16,8 @@ export default function RootLayout({
         <link rel="icon" href="/logo-icon.png" />
 
         {/* Local Fonts and Styles */}
-        {/* <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="/media-queries/responsive.css" /> */}
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/media-queries/responsive.css" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -26,13 +26,13 @@ export default function RootLayout({
         />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
           rel="stylesheet"
         />
 
         {/* CDN Fonts and Styles */}
 
-        <link
+        {/* <link
           rel="stylesheet"
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/vikas-narwariya/qualimatrix-web-css/style-v27.css"
@@ -42,7 +42,7 @@ export default function RootLayout({
           rel="stylesheet"
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/vikas-narwariya/qualimatrix-web-css/responsive-v22.css"
-        />
+        /> */}
 
         {/* Slick Css */}
         <link
