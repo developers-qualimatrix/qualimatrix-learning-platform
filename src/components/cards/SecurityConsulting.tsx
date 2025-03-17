@@ -13,8 +13,6 @@ interface CardItem {
 const SecurityConsulting: React.FC<{ cardData: CardItem[] }> = ({
   cardData,
 }) => {
-  const searchParams = useSearchParams();
-
   const { theme } = useTheme();
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const currentCardRef = useRef<HTMLDivElement | null>(null);
@@ -33,7 +31,7 @@ const SecurityConsulting: React.FC<{ cardData: CardItem[] }> = ({
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
-  }, [searchParams]);
+  }, []);
 
   useEffect(() => {
     if (selectedCard && currentCardRef.current) {
