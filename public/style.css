@@ -48,7 +48,7 @@ html {
 .qt-contact-btn {
   color: #fff;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -203,7 +203,7 @@ html {
 }
 
 .qt-blog-content-wrap h1 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(3rem, 3vw, 5rem);
   font-style: normal;
   font-weight: 700;
@@ -213,7 +213,7 @@ html {
 }
 
 .qt-blog-content-wrap h2 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(2.2rem, 2vw, 2.6rem);
   font-style: normal;
   font-weight: 700;
@@ -223,7 +223,7 @@ html {
 }
 
 .qt-blog-content-wrap h3 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(2rem, 2vw, 2.4rem);
   font-style: normal;
   font-weight: 700;
@@ -232,7 +232,7 @@ html {
 }
 
 .qt-blog-content-wrap h4 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(1.8rem, 2vw, 2.2rem);
   font-style: normal;
   font-weight: 700;
@@ -241,7 +241,7 @@ html {
 }
 
 .qt-blog-content-wrap h5 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   /* font-size: clamp(1.8rem, 2vw, 2.2rem); */
   font-style: normal;
   /* font-weight: 700; */
@@ -303,7 +303,7 @@ html {
   font-family: "Nunito", sans-serif;
   /* font-size: clamp(3rem, 3vw, 5rem); */
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   text-wrap: balance;
@@ -353,7 +353,7 @@ html {
 .qt-title-2 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   /* font-size: clamp(2.2rem, 1.8vw, 2.4rem); */
   text-transform: uppercase;
@@ -364,7 +364,7 @@ html {
 .qt-title-3 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   font-size: clamp(2rem, 1vw, 3rem);
@@ -407,7 +407,7 @@ html {
   background: #fff;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.07);
   color: #555;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -427,7 +427,7 @@ html {
 
 .qt-blog-search-wrap input::placeholder {
   color: #555;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -445,11 +445,26 @@ html {
   margin-left: 25px;
 }
 
-.qt-hero-section.light-theme {
+/* .qt-hero-section.light-theme {
   position: relative;
   background-color: var(--background-light);
   color: var(--text-light);
   background-image: url("lms/hero.png");
+} */
+.qt-hero-section.light-theme {
+  position: relative;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  background-image: linear-gradient(
+      90deg,
+      #083c74 0%,
+      rgba(15, 113, 218, 0.9) 100%
+    ),
+    url("lms/hero.png");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: multiply; /* Allows both image & gradient to blend */
 }
 
 /* light theme styles */
@@ -641,7 +656,7 @@ header {
 
 .qt-hero-content-wrap .title {
   color: #252b33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -659,7 +674,7 @@ header {
 
 .qt-career-section .qt-hero-content-wrap .title {
   color: #252b33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -676,7 +691,7 @@ header {
 
 .qt-culture-section .qt-hero-content-wrap .title {
   color: #252b33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -686,7 +701,7 @@ header {
 
 .qt-culture-section .qt-hero-content-wrap .description {
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
@@ -710,7 +725,7 @@ header {
 }
 
 .qt-main-career-block .card .card-title {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(2rem, 2vw, 2.4rem);
   font-style: normal;
   font-weight: 700;
@@ -807,7 +822,7 @@ header {
 }
 
 .cta-btn {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -848,7 +863,7 @@ header {
 .qt-hero-content-wrap .qt-podcast-cta {
   border: none;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -1075,7 +1090,7 @@ header {
 
 .qt-award-block .title {
   color: #fff;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -1095,7 +1110,7 @@ header {
 
 .qt-award-block .cybersecurity-title-block {
   color: #fff;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -1133,7 +1148,7 @@ header {
   top: 0;
   left: 0;
   color: #fff;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1679,7 +1694,7 @@ header {
 
 .qt-career-search-form .num-job {
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -1697,7 +1712,7 @@ header {
   padding: 19px 19px 19px 50px;
 
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1750,7 +1765,7 @@ header {
   border-radius: 30px;
   padding: 19px;
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1762,7 +1777,7 @@ header {
   border-radius: 8px;
   padding: 19px 20px;
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1775,7 +1790,7 @@ header {
   border: 1px solid #0159dc;
   padding: 19px;
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1913,7 +1928,7 @@ header {
   display: flex;
   gap: 20px 40px;
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1962,7 +1977,7 @@ header {
   border-radius: 15px;
   color: #feae33;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -1986,7 +2001,7 @@ header {
 
 .qt-job-cards .job-type {
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -2011,7 +2026,7 @@ header {
   transform: rotate(-90deg);
 
   text-align: center;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -2100,7 +2115,7 @@ header {
 }
 
 .qt-home-accordion .accordion-button {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 600;
@@ -2150,7 +2165,7 @@ header {
   color: #0159dc;
 
   text-align: center;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -2200,7 +2215,7 @@ header {
 
 .qt-client-block .card-title {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 700;
@@ -2229,7 +2244,7 @@ header {
 .qt-client-block .card-country {
   color: #0159dc;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -2362,7 +2377,7 @@ header {
 
 .qt-case-study-block .card-title {
   color: #fff;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -2385,7 +2400,7 @@ header {
 .qt-case-study-block .card-description-2 {
   color: #feae33;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 700;
@@ -2397,7 +2412,7 @@ header {
 .card-rotate-block .card-description-3 {
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 700;
@@ -2773,7 +2788,7 @@ header {
 
 .qt-strategy-left-block .strategy-num {
   z-index: 2;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -2799,7 +2814,7 @@ header {
 .qt-strategy-left-block .strategy-content .title {
   color: #252b33;
   /* text-align: center; */
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -2809,7 +2824,7 @@ header {
 
 .qt-strategy-left-block .strategy-content .description {
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2847,7 +2862,7 @@ header {
 .qt-culture-custom-tabs .text-wrap .text {
   color: #252b33;
   text-align: center;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 700;
@@ -3031,7 +3046,7 @@ header {
 }
 
 .qt-culture-custom-tabs .tab-content .user-name {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 600;
@@ -3049,7 +3064,7 @@ header {
 
 .qt-culture-custom-tabs .tab-content .user-position {
   color: #feae33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -3098,7 +3113,7 @@ header {
   background-color: #fff;
   color: #0159dc;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -3125,7 +3140,7 @@ header {
 
 .qt-podcast-cta span {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(2.2rem, 2vw, 3rem);
   font-style: normal;
   font-weight: 900;
@@ -3139,7 +3154,7 @@ header {
 
 .qt-podcast-cta.dark-theme span {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(2.2rem, 2vw, 3rem);
   font-style: normal;
   font-weight: 900;
@@ -3157,7 +3172,7 @@ header {
   background-color: #fff;
   color: #0159dc;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -3172,7 +3187,7 @@ header {
 
 .qt-free-cta span {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(2.2rem, 2vw, 3rem);
   font-style: normal;
   font-weight: 900;
@@ -3186,7 +3201,7 @@ header {
 
 .qt-free-cta.dark-theme span {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(2.2rem, 2vw, 3rem);
   font-style: normal;
   font-weight: 900;
@@ -3210,7 +3225,7 @@ header {
 
 .qt-cta-free-consultation {
   color: #0159dc;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 500;
@@ -3293,7 +3308,7 @@ header {
 }
 
 .qt-footer h6 {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -3316,7 +3331,7 @@ header {
 }
 
 .qt-footer li {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3325,7 +3340,7 @@ header {
 }
 
 .qt-footer-description {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3374,7 +3389,7 @@ header {
 }
 
 .qt-footer-bottom p {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -3424,7 +3439,7 @@ header {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.07);
   padding: 17px 20px;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3447,7 +3462,7 @@ header {
 }
 
 .qt-email ::placeholder {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3492,7 +3507,7 @@ header {
   height: 80px;
   flex-shrink: 0;
   color: #5c3bcf;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 500;
@@ -3546,7 +3561,7 @@ header {
 }
 
 .qt-blog-date-tag {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -3568,7 +3583,7 @@ header {
 }
 
 .qt-blog-tag {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -3621,7 +3636,7 @@ header {
 .qt-technology-section .technology-tab-head button {
   color: #555;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 500;
@@ -3634,7 +3649,7 @@ header {
 .qt-home-technology-block .nav-tabs,
 .qt-home-technology-block .nav-link {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 500;
@@ -3821,7 +3836,7 @@ header {
 
 .qt-title-blue {
   color: #0159dc;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3912,7 +3927,7 @@ header {
   border-radius: 8px;
 
   padding: 19px 20px;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3970,7 +3985,7 @@ body textarea {
   border-radius: 8px;
   padding: 19px 20px;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4015,7 +4030,7 @@ body textarea {
 .qt-checkbox-container.light-theme {
   color: var(--text-secondary-light);
   color: #555;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4025,7 +4040,7 @@ body textarea {
 .qt-checkbox-container.dark-theme {
   color: var(--text-secondary-dark);
   color: #d5d5d5;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -4046,7 +4061,7 @@ body textarea {
   border-radius: 8px;
 
   padding: 19px 20px;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -4072,7 +4087,7 @@ body textarea {
 
 .qt-submit {
   color: #0159dc;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(18px, 2vw, 24px);
   font-style: normal;
   font-weight: 500;
@@ -4107,7 +4122,7 @@ body textarea {
   background: #f6f8ff;
   padding: 25px;
   color: #0159dc;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(16px, 2vw, 20px);
   font-style: normal;
   font-weight: 500;
@@ -4311,7 +4326,7 @@ body textarea {
 .qt-service-faq-accordion .accordion-button {
   text-transform: uppercase;
 
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -4581,7 +4596,7 @@ textarea:focus {
   align-items: center;
   gap: 10px;
   color: #feae33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -4605,7 +4620,7 @@ textarea:focus {
 
 .qt-price-title {
   color: #feae33;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: clamp(4rem, 5vw, 7rem);
   font-style: normal;
   font-weight: 700;
@@ -4795,7 +4810,7 @@ textarea:focus {
   line-height: 1;
   transition: background-color 0.3s ease;
 
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -4881,7 +4896,7 @@ textarea:focus {
 
 .qt-menu-footer .text-1 {
   color: #feae33;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -4890,7 +4905,7 @@ textarea:focus {
 
 .qt-menu-footer .text-2 {
   color: #feae33;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -5048,7 +5063,7 @@ textarea:focus {
 .qt-development-card-2 .card-title {
   color: #252b33;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -5057,7 +5072,7 @@ textarea:focus {
 
 .qt-development-card-2 .card-description {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -5243,7 +5258,7 @@ textarea:focus {
 
 .qt-related-blog-card .card-date-tag {
   color: #5c3bcf;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -5252,7 +5267,7 @@ textarea:focus {
 }
 
 .qt-related-blog-card .card-title {
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -5265,7 +5280,7 @@ textarea:focus {
 }
 
 .qt-related-blog-card .card-description {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -5343,7 +5358,7 @@ textarea:focus {
 .qt-map-container-address-box h2 {
   color: #0159dc;
   text-align: center;
-  font-family: Lexend Deca;
+  font-family: Nunito;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -5354,7 +5369,7 @@ textarea:focus {
 .qt-map-container-address-box p {
   color: #252b33;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -5677,7 +5692,7 @@ textarea:focus {
 }
 
 .qt-offcanvas-block li {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -5755,14 +5770,14 @@ textarea:focus {
 }
 
 .qt-offcanvas-block .tab-cards h2 {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
 }
 
 .qt-offcanvas-block .tab-cards li {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -5771,7 +5786,7 @@ textarea:focus {
 .qt-offcanvas-block .dropdown-toggle {
   background: none;
   border: none;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -5817,7 +5832,7 @@ textarea:focus {
   cursor: pointer;
   border-radius: 8px;
   padding: 19px 20px;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -6250,7 +6265,7 @@ textarea:focus {
 
 .qt-custom-phone-input .react-tel-input .form-control {
   position: relative;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   letter-spacing: 0.01rem;
   margin-top: 0 !important;
@@ -6358,7 +6373,7 @@ textarea:focus {
 }
 
 .qt-menu-custom-tabs .tab-content .tab-card h2 {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
@@ -6367,7 +6382,7 @@ textarea:focus {
 }
 
 .qt-menu-custom-tabs .tab-content .tab-card li {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 1.4rem;
   line-height: 2rem;
   font-style: normal;
@@ -6402,7 +6417,7 @@ textarea:focus {
 
 .qt-cybersecurity-tool-card .qt-description {
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(2rem, 2vw, 3rem);
   font-style: normal;
   font-weight: 500;
@@ -6458,7 +6473,7 @@ textarea:focus {
 .qt-cybersecurity-field-title {
   color: #555;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(1.8rem, 2vw, 2.4rem);
   font-style: normal;
   font-weight: 600;
@@ -6466,7 +6481,7 @@ textarea:focus {
 }
 
 .qt-cybersecurity-field-description {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: clamp(1.6rem, 2vw, 1.8rem);
   font-style: normal;
   font-weight: 500;
@@ -6570,7 +6585,7 @@ textarea:focus {
 .qt-severity-progress-bar {
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -6638,7 +6653,7 @@ textarea:focus {
 
 .qt-cyber-ad-description-2 {
   color: #0159dc;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -6712,7 +6727,7 @@ textarea:focus {
 
 .qt-pie-chart-card-back {
   color: #fff;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -6734,7 +6749,7 @@ textarea:focus {
 }
 
 .qt-cyber-svg-text {
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -6787,7 +6802,7 @@ textarea:focus {
 body .dropdown-toggle {
   color: #252b33;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6825,7 +6840,7 @@ body .dropdown-menu.show {
 }
 body .qt-navbar-title {
   color: #1b1b1b;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -6844,7 +6859,7 @@ body .qt-navbar-title.dark-theme {
 body .qt-navbar-item-description {
   color: #252525;
 
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -6940,7 +6955,7 @@ body .offcanvas-header .btn-close {
   background: #feae33;
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -6985,7 +7000,7 @@ body .offcanvas-header .btn-close {
   color: #333;
   margin-bottom: 12px;
   font-size: 20px;
-  font-family: Inter;
+  font-family: Nunito;
 }
 .scan-vulnerability-section {
   margin-bottom: 8px;
@@ -6995,7 +7010,7 @@ body .offcanvas-header .btn-close {
   font-weight: bold;
   color: #0159dc;
   margin-bottom: 5px;
-  font-family: Inter;
+  font-family: Nunito;
   font-weight: 800;
 }
 .scan-vulnerability-subheading-solution {
@@ -7003,7 +7018,7 @@ body .offcanvas-header .btn-close {
   font-weight: bold;
   color: #ee6c4d;
   margin-bottom: 5px;
-  font-family: Inter;
+  font-family: Nunito;
   font-weight: 800;
 }
 .scan-vulnerability-text {
@@ -7054,7 +7069,7 @@ body .offcanvas-header .btn-close {
 .scan-vulnerability-result {
   padding: 10px 20px;
   background-color: #a4e4ff;
-  font-family: Inter;
+  font-family: Nunito;
   font-size: 13px;
   color: #555;
   line-height: 1.6;
@@ -7544,6 +7559,7 @@ div#wave .dot:nth-child(3) {
   font-weight: 700;
   line-height: normal;
   border: none;
+  margin-bottom: 40px;
 }
 
 .qt-course-description {
@@ -7573,7 +7589,6 @@ div#wave .dot:nth-child(3) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
 }
 
 .qt-course-description .card-title span {
@@ -7653,9 +7668,10 @@ div#wave .dot:nth-child(3) {
   line-height: normal;
   border-radius: 10px;
   background: #0159dc;
-  padding: 18px;
+  padding: 12px 24px;
   display: flex;
   margin: 20px;
+  border: none;
 }
 
 .qt-key-feature {
@@ -7674,6 +7690,25 @@ div#wave .dot:nth-child(3) {
   position: absolute;
   right: 10%;
   bottom: 0;
+  max-width: 30vw; /* Make image responsive based on viewport width */
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  /* Tablets */
+  .qt-girl-img {
+    max-width: 40vw; /* Increase size on tablets */
+    right: 5%; /* Adjust position */
+  }
+}
+@media (max-width: 768px) {
+  /* Mobile */
+
+  .qt-girl-img {
+    position: relative; /* Remove absolute positioning */
+    max-width: 60vw; /* Adjust size for mobile */
+    margin: 0 auto; /* Center the image */
+  }
 }
 
 .rating-container {
@@ -7689,4 +7724,14 @@ div#wave .dot:nth-child(3) {
 
   background-color: #fff;
   padding: 0 !important;
+}
+
+.calendly-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendly-inline-widget {
+  width: 100%;
+  height: 100%;
 }
