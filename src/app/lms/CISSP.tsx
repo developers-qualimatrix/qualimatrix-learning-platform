@@ -18,6 +18,8 @@ import RegisterAccountForm from "@/components/forms/RegisterAccount";
 import ScheduleModal from "@/components/forms/ScheduleModal";
 import CourseDescriptionAccordion from "@/components/cards/CourseDescriptionAccordion";
 import TrainingCardGrid from "@/components/cards/TrainingCard";
+import SolutionCardList2 from "@/components/cards/SolutionCardList2";
+import CalendlyWidget from "@/components/cards/CalendlyWidget";
 // import CorporateTrainingForm from "@/components/forms/CorporateTrainingForm";
 
 const CISSP = () => {
@@ -39,13 +41,14 @@ const CISSP = () => {
       id: 1,
       title: "Latest CISSP curriculum with regular test monitoring",
     },
+
     {
       id: 2,
-      title: "Top certified Tutors",
+      title: "Hands-on experience with 8 Domains to master Cybersecurity",
     },
     {
       id: 3,
-      title: "Hands-on experience with 8 Domains to master Cybersecurity",
+      title: "Top certified Tutors",
     },
     {
       id: 4,
@@ -102,35 +105,6 @@ const CISSP = () => {
     {
       id: 6,
       title: "Official courseware from Cloud Security Alliance.",
-    },
-  ];
-  const trainingTypes = [
-    {
-      title: "1-on-1 Training",
-      points: [
-        { id: 1, title: "Convenient schedule" },
-        { id: 2, title: "Personalized Learning Experience" },
-        { id: 3, title: "Customized Content" },
-        { id: 4, title: "Trainer’s Undivided Attention" },
-      ],
-    },
-    {
-      title: "Group Training",
-      points: [
-        { id: 1, title: "Convenient schedule" },
-        { id: 2, title: "Personalized Learning Experience" },
-        { id: 3, title: "Customized Content" },
-        { id: 4, title: "Trainer’s Undivided Attention" },
-      ],
-    },
-    {
-      title: "Corporate Training",
-      points: [
-        { id: 1, title: "Convenient schedule" },
-        { id: 2, title: "Personalized Learning Experience" },
-        { id: 3, title: "Customized Content" },
-        { id: 4, title: "Trainer’s Undivided Attention" },
-      ],
     },
   ];
   const accordionData = [
@@ -272,7 +246,7 @@ const CISSP = () => {
 
         <section
           className={`qt-hero-section ${theme}-theme`}
-          style={{ backgroundColor: bgColor }}
+          // style={{ backgroundColor: bgColor }}
         >
           <div className="container">
             <div className="qt-hero-1">
@@ -310,7 +284,8 @@ const CISSP = () => {
                     <div className="row qt-description text-white">
                       <div className="col">
                         <div>
-                          <strong>4.5</strong> Ratings on Reviews
+                          <span style={{ fontWeight: "600" }}>4.5</span> Ratings
+                          on <img src="/lms/google-icon.png" /> Reviews
                         </div>
                         <div>
                           <img src="/lms/star.png" />
@@ -319,13 +294,15 @@ const CISSP = () => {
                       <div className="qt-line"></div>
                       <div className="col">
                         <p>
-                          <strong>5000+</strong> Professionals Enrolled
+                          <span style={{ fontWeight: "600" }}>5000+</span>
+                           Professionals Enrolled
                         </p>
                       </div>
                       <div className="qt-line"></div>
                       <div className="col">
                         <p>
-                          <strong>98.3%</strong> Success Rate
+                          <span style={{ fontWeight: "600" }}>98.3%</span>
+                           Success Rate
                         </p>
                       </div>
                     </div>
@@ -408,7 +385,7 @@ const CISSP = () => {
                       The participants would be able to:
                     </p>
                     <div className="text-left">
-                      <SolutionCardList cardList={cardData2} />
+                      <SolutionCardList2 cardList={cardData2} />
                     </div>
                   </div>
                   <div className="card">
@@ -419,7 +396,7 @@ const CISSP = () => {
                       Deliverables of this program include:
                     </p>
                     <div className="text-left">
-                      <SolutionCardList cardList={cardData3} />
+                      <SolutionCardList2 cardList={cardData3} />
                     </div>
                   </div>
                 </div>
@@ -479,8 +456,15 @@ const CISSP = () => {
                   Comprehensive overview of CISSP Structure and format
                 </p>
 
-                <ul className={`qt-description ${theme}-theme`}>
-                  <p>Exam Format - Objective Type, Multiple Choice</p>
+                <ul
+                  className={`qt-description ${theme}-theme`}
+                  style={{ marginBottom: "40px" }}
+                >
+                  <p>
+                    <strong>
+                      Exam Format - Objective Type, Multiple Choice
+                    </strong>
+                  </p>
                   <li>
                     <span>
                       <TickIcon />
@@ -518,9 +502,12 @@ const CISSP = () => {
                     <p>Closed book</p>
                   </li>
                 </ul>
-                <Link href="/" className="col qt-cissp-hero-btn">
-                  <>Register Now</>
-                </Link>
+                <button
+                  onClick={() => setModalShow(true)}
+                  className="qt-know-more"
+                >
+                  Register Now
+                </button>
               </div>
 
               <div className="col-lg-5 d-flex justify-content-end">
@@ -535,25 +522,18 @@ const CISSP = () => {
           <div className="container">
             <div className="row text-center mb-5">
               <h1 className={`qt-title ${theme}-theme mb-3`}>
-                Would you still like more info about Certified Information
-                Systems Security Professional?
+                ARE YOU STILL LOOKING TO GET A DEEPER UNDERSTANDING OF CISSP?
               </h1>
-              {/* <h2 className={`qt-title-2 ${theme}-theme mb-3`}>
-              <span style={{ color: "#0159DC" }}>
-                Web App penetration testing is another techishh… name for
-                ethical hacking. Really?
-              </span>
-            </h2>
-            <h1 className={`qt-title ${theme}-theme mb-3`}>
-              {" "}
-              Ok, Let's get a li’ll Comprehensive!
-            </h1> */}
+
               <p className={`qt-description ${theme}-theme mb-5 `}>
-                Book a 10-15-minute Session with our Learning Advisor
+                Take a 15-minute session  with our advisor.
               </p>
               {/* <h1 className={`qt-title ${theme}-theme`}>
               Role of Web App Pen Testing in Security
             </h1> */}
+              <div>
+                <CalendlyWidget />
+              </div>
             </div>
           </div>
         </section>

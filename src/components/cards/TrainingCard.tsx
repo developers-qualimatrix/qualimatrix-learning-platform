@@ -52,10 +52,7 @@ const TrainingCard: React.FC<TrainingCardProps> = ({ title, points }) => {
         </div>
 
         {/* Button */}
-        <button
-          onClick={() => setModalShow(true)}
-          className="qt-know-more"
-        >
+        <button onClick={() => setModalShow(true)} className="qt-know-more">
           Know More
         </button>
       </div>

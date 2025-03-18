@@ -14,7 +14,6 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/logo-icon.png" />
-
         {/* Local Fonts and Styles */}
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/media-queries/responsive.css" />
@@ -24,14 +23,11 @@ export default function RootLayout({
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
           crossOrigin="anonymous"
         />
-
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
           rel="stylesheet"
         />
-
         {/* CDN Fonts and Styles */}
-
         {/* <link
           rel="stylesheet"
           type="text/css"
@@ -43,7 +39,6 @@ export default function RootLayout({
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/vikas-narwariya/qualimatrix-web-css/responsive-v22.css"
         /> */}
-
         {/* Slick Css */}
         <link
           rel="stylesheet"
@@ -56,12 +51,10 @@ export default function RootLayout({
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-
         <meta
           name="google-site-verification"
           content="YxPeRmwSnQwQ6W5ThRUxpXAxLOns0I79k_UssR58n8s"
         />
-
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -75,9 +68,7 @@ export default function RootLayout({
           `,
           }}
         />
-
         {/* Google Tag Manager */}
-
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-FQNKTBEQ89"
@@ -93,7 +84,12 @@ export default function RootLayout({
               gtag('config', 'G-FQNKTBEQ89');
             `,
           }}
-        />
+        />{" "}
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
       </head>
       <body>
         <ThemeProvider>
