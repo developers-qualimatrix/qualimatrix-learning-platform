@@ -49,12 +49,13 @@ const TrainingCard: React.FC<TrainingCardProps> = ({ title, points }) => {
               <span>{point}</span>
             </div>
           ))}
+
+          <button onClick={() => setModalShow(true)} className="qt-know-more">
+            Know More
+          </button>
         </div>
 
         {/* Button */}
-        <button onClick={() => setModalShow(true)} className="qt-know-more">
-          Know More
-        </button>
       </div>
 
       {/* Modal Form */}

@@ -8,6 +8,7 @@ import { useRef, useState } from "react";
 import * as Yup from "yup";
 import CTAButton from "../buttons/CTAButton";
 import { LinearBorder } from "../ui/LinearBorder";
+import Link from "next/link";
 
 const validationSchema = Yup.object().shape({
   fullName: Yup.string()
@@ -290,7 +291,10 @@ const CorporateTrainingForm = () => {
                       style={{ color: "#0159DC" }}
                       className="text-[#0159DC]"
                     >
-                      Privacy Policy
+                      {" "}
+                      <Link href="https://www.qualimatrix.tech/privacy-policy">
+                        Privacy Policy
+                      </Link>
                     </span>
                   </label>
                 </div>

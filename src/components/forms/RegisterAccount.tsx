@@ -128,16 +128,14 @@ const RegisterAccountForm: React.FC<RegisterAccountProps> = (props) => {
           <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
           <div className={`qt-form-wrap ${theme}-theme`}>
             <div className={`qt-form ${theme}-theme`}>
-              <h1 className={`qt-title ${theme}-theme`}>
+              <h1 className={`qt-title ${theme}-theme mb-5`}>
                 Register your Account
               </h1>
-              <p className={`qt-description ${theme}-theme`}>
-                There are many variations of passages of Lorem Ipsum available.
-              </p>
+
               <div className="contact-form">
                 <form ref={formRef} onSubmit={formik.handleSubmit}>
-                  <div className="row">
-                    <div className="col-md-6 col-sm-12 p-0 ">
+                  <div className="row gap-5">
+                    <div className="col p-0 ">
                       <div className=" field-wrap2 w-100 mb-sm-5 mb-3 ">
                         <LinearBorder>
                           <input
@@ -159,7 +157,7 @@ const RegisterAccountForm: React.FC<RegisterAccountProps> = (props) => {
                       </div>{" "}
                       <CountrySelector formik={formik} name="selectedCountry" />
                     </div>
-                    <div className="col-md-6 col-sm-12 p-0">
+                    <div className="col p-0">
                       <div className="w-100 mb-sm-5 mb-3">
                         <LinearBorder>
                           <input
