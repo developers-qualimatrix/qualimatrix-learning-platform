@@ -42,14 +42,29 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
     setErrorMessage(""); // Remove error if a date is selected
   };
 
+  // const handleSubmit = () => {
+  //   if (!selectedSchedule) {
+  //     setErrorMessage("⚠️ Please select a date before submitting.");
+  //     return;
+  //   }
+
+  //   // Pass selected date to RegisterAccountForm
+  //   setModalShow(true);
+  // };
+
   const handleSubmit = () => {
     if (!selectedSchedule) {
       setErrorMessage("⚠️ Please select a date before submitting.");
       return;
     }
 
-    // Pass selected date to RegisterAccountForm
-    setModalShow(true);
+    // Close ScheduleModal
+    if (props.onHide) props.onHide();
+
+    // Open RegisterAccountForm after a slight delay
+    setTimeout(() => {
+      setModalShow(true);
+    }, 300);
   };
 
   return (
@@ -79,13 +94,13 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
               </p>
 
               {/* 🗓️ Weekly Schedule Selection */}
-              <div
+              {/* <div
                 style={{
                   display: "grid",
                   gridTemplateColumns: "auto auto auto",
                   gap: "16px",
                 }}
-                className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5"
+                className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5 qt-description"
               >
                 {weekData.map((entry: any, index) => (
                   <div
@@ -99,7 +114,24 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
                     onClick={() => handleScheduleSelect(entry.date)}
                   >
                     <p className="text-lg font-medium text-gray-900">
-                      {entry.date}
+                      <strong> {entry.date}</strong>
+                    </p>
+                    <p className="text-gray-700">{entry.time}</p>
+                  </div>
+                ))}
+              </div> */}
+
+              <div className="schedule-grid qt-description my-5">
+                {weekData.map((entry: any, index) => (
+                  <div
+                    key={index}
+                    className={`schedule-card ${
+                      selectedSchedule === entry.date ? "selected" : ""
+                    }`}
+                    onClick={() => handleScheduleSelect(entry.date)}
+                  >
+                    <p className="text-lg font-medium text-gray-900">
+                      <strong>{entry.date}</strong>
                     </p>
                     <p className="text-gray-700">{entry.time}</p>
                   </div>
@@ -113,7 +145,7 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
 
               {/* 📩 Submit Button */}
               <div className="w-100 d-md-flex justify-content-center mt-5">
-                <button className="qt-cissp-hero-btn" onClick={handleSubmit}>
+                <button className="qt-cissp-hero-btn " onClick={handleSubmit}>
                   Register Now
                 </button>
 

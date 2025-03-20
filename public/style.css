@@ -758,8 +758,21 @@ header {
 
 .qt-service-main-block .cards-1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
   gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .qt-service-main-block .cards-1 {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .qt-service-main-block .cards-1 {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile screens */
+    gap: 20px; /* Reduce gap for smaller screens */
+  }
 }
 
 @media (min-width: 1201px) {
@@ -7612,7 +7625,7 @@ div#wave .dot:nth-child(3) {
 
 .training-card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -7670,16 +7683,28 @@ div#wave .dot:nth-child(3) {
   background: #0159dc;
   padding: 12px 24px;
   display: flex;
-  margin: 20px;
+  margin: 20 0px;
   border: none;
 }
 
 .qt-key-feature {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Default: 1 card per row */
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   list-style: none;
   padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .qt-key-feature {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .qt-key-feature {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
 }
 
 .header-logo {
@@ -7690,27 +7715,24 @@ div#wave .dot:nth-child(3) {
   position: absolute;
   right: 10%;
   bottom: 0;
-  max-width: 30vw; /* Make image responsive based on viewport width */
+  max-width: 30vw; /* Responsive width */
   height: auto;
 }
 
 @media (max-width: 1024px) {
   /* Tablets */
   .qt-girl-img {
-    max-width: 40vw; /* Increase size on tablets */
+    max-width: 40vw; /* Increase size */
     right: 5%; /* Adjust position */
   }
 }
+
 @media (max-width: 768px) {
   /* Mobile */
-
   .qt-girl-img {
-    position: relative; /* Remove absolute positioning */
-    max-width: 60vw; /* Adjust size for mobile */
-    margin: 0 auto; /* Center the image */
+    display: none; /* Hide image on mobile */
   }
 }
-
 .rating-container {
   border-radius: 10px;
 
@@ -7734,4 +7756,44 @@ div#wave .dot:nth-child(3) {
 .calendly-inline-widget {
   width: 100%;
   height: 100%;
+}
+
+
+
+.schedule-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr; /* Default: 1 column for mobile */
+}
+
+@media (min-width: 640px) { /* Small devices (sm) */
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (min-width: 1024px) { /* Large devices (lg) */
+  .schedule-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+.schedule-card {
+  width: 300px;
+  max-width: 300px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.schedule-card:hover {
+  border-color: #3b82f6; /* Blue hover effect */
+}
+
+.schedule-card.selected {
+  border: 2px solid #3b82f6;
+  background-color: #dbeafe;
 }

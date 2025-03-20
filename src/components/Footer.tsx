@@ -194,14 +194,14 @@ const Footer: FC = () => {
                   {" "}
                   <h6>COMPANY</h6>
                   <ul>
-                    <Link href="/culture">
+                    <Link href="https://www.qualimatrix.tech/culture">
                       {" "}
                       <li>Culture</li>
                     </Link>
-                    <Link href="/contact-us">
+                    <Link href="https://www.qualimatrix.tech/contact-us">
                       <li>Contact Us</li>
                     </Link>
-                    <Link href="/privacy-policy">
+                    <Link href="https://www.qualimatrix.tech/privacy-policy">
                       <li>Privacy Policy</li>
                     </Link>
                   </ul>
@@ -217,13 +217,13 @@ const Footer: FC = () => {
                     {" "}
                     <h6>FEATURES</h6>
                     <ul>
-                      <Link href="/blogs">
+                      <Link href="https://www.qualimatrix.tech/blogs">
                         <li>Blogs</li>
                       </Link>
-                      <Link href="/case-study">
+                      <Link href="https://www.qualimatrix.tech/case-study">
                         <li>Case Study</li>
                       </Link>{" "}
-                      <Link href="/partner-with-us">
+                      <Link href="https://www.qualimatrix.tech/partner-with-us">
                         <li>Partner With Us</li>
                       </Link>
                     </ul>
@@ -239,13 +239,13 @@ const Footer: FC = () => {
                   <div>
                     <h6>Quick Links</h6>
                     <ul>
-                      <Link href="/services/development/web-app">
+                      <Link href="https://www.qualimatrix.tech/services/development/web-app">
                         <li>Development</li>
                       </Link>
-                      <Link href="/services/cyber-security-engineering/web-app-pen-testing">
+                      <Link href="https://www.qualimatrix.tech/services/cyber-security-engineering/web-app-pen-testing">
                         <li>Cybersecurity</li>
                       </Link>
-                      <Link href="/qa-audit">
+                      <Link href="https://www.qualimatrix.tech/qa-audit">
                         <li>Free QA Audit</li>
                       </Link>
                     </ul>
@@ -283,9 +283,9 @@ const Footer: FC = () => {
                       <button>
                         {loader ? (
                           // <Spinner animation="grow" variant="primary">
-                            <span className="visually-hidden">Loading...</span>
-                          // </Spinner>
+                          <span className="visually-hidden">Loading...</span>
                         ) : (
+                          // </Spinner>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="18"
