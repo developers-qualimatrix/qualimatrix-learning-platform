@@ -363,7 +363,7 @@ const CISSP = () => {
                     Become a top CISSP Professional with the best CISSP
                     curriculum ever!
                   </p>
-                  <div className="text-center">
+                  <div className="d-flex justify-content-center">
                     <SolutionCardList cardList={cardData1} />
                   </div>
                 </div>

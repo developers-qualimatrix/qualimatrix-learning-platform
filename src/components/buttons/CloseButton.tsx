@@ -5,7 +5,13 @@ const CloseButton = ({ onHide }: { onHide?: any }) => {
       onClick={onHide}
       data-bs-dismiss="modal"
     >
-      <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="40" /* Adjust the size */
+        height="40" /* Maintain aspect ratio */
+        viewBox="0 0 90 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g filter="url(#filter0_d_883_18535)">
           <rect x="15" y="10" width="60" height="60" rx="30" fill="#0159DC" />
         </g>
