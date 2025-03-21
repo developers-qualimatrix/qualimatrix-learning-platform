@@ -18,7 +18,7 @@ const CalendlyWidget = () => {
     <div className="calendly-container">
       <div
         className="calendly-inline-widget"
-        data-url="https://calendly.com/qualimatrix/lms/30min"
+        data-url="https://calendly.com/qualimatrix/lms?hide_gdpr_banner=1"
         style={{ minWidth: "320px", height: "700px" }}
       ></div>
     </div>

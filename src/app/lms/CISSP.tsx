@@ -58,53 +58,53 @@ const CISSP = () => {
   const cardData2 = [
     {
       id: 1,
-      title: "How to implement Cloud Security in your organization.",
+      title: "Develop Customized Cloud Security Solutions.",
     },
     {
       id: 2,
-      title: "Cloud Security best practices.",
+      title: "Expertise in industry-leading cloud security pratices.",
     },
     {
       id: 3,
-      title: "Industry Expert Cloud Security tools and techniques.",
+      title: "Apply advanced security frameworks and tools.",
     },
     {
       id: 4,
-      title: "How to reduce cost and increase agility.",
+      title: "Experts in cost optimization for smoother operation scalability.",
     },
     {
       id: 5,
-      title: "How to build & architect complex apps.",
+      title: "Design and function complex cloud applications.",
     },
     {
       id: 6,
-      title: "Real-Time Case Studies.",
+      title: "Gain insights from real-world case studies.",
     },
   ];
   const cardData3 = [
     {
       id: 1,
-      title: "Study Material.",
+      title: "Best Learning materials.",
     },
     {
       id: 2,
-      title: "Mock Exams.",
+      title: "Mock tests and practical exams.",
     },
     {
       id: 3,
-      title: "16+ hours of live training.",
+      title: "Live training sessions (16+ Hrs).",
     },
     {
       id: 4,
-      title: "Exam registration assistance.",
+      title: "Assisted exam registration.",
     },
     {
       id: 5,
-      title: "Case studies soft copy.",
+      title: "Digitaly accessible case studies.",
     },
     {
       id: 6,
-      title: "Official courseware from Cloud Security Alliance.",
+      title: "CSA (Cloud Security Alliance) Recognized.",
     },
   ];
   const accordionData = [
@@ -359,7 +359,7 @@ const CISSP = () => {
                   <h1 className={`qt-title ${theme}-theme mb-3`}>
                     Key Features
                   </h1>
-                  <p className={`qt-description ${theme}-theme`}>
+                  <p className={`qt-description ${theme}-theme mb-5`}>
                     Become a top CISSP Professional with the best CISSP
                     curriculum ever!
                   </p>
@@ -382,7 +382,7 @@ const CISSP = () => {
                       Learning Outcome
                     </h1>
                     <p className={`qt-description ${theme}-theme`}>
-                      The participants would be able to:
+                      Completion of the course will make candidates:
                     </p>
                     <div className="text-left">
                       <SolutionCardList2 cardList={cardData2} />
@@ -393,7 +393,7 @@ const CISSP = () => {
                       Program Deliverables
                     </h1>
                     <p className={`qt-description ${theme}-theme`}>
-                      Deliverables of this program include:
+                      This course provides access to:
                     </p>
                     <div className="text-left">
                       <SolutionCardList2 cardList={cardData3} />
