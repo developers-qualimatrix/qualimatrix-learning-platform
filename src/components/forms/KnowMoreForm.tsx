@@ -299,7 +299,7 @@ const KnowMoreForm: React.FC<KnowMoreProps> = (props) => {
                     <div className="field-wrap2 w-100">
                       <LinearBorder>
                         <textarea
-                          placeholder="Describe Your Experience"
+                          placeholder="Describe Your Experience*"
                           rows={10}
                           className={`field-input w-100 ${theme}-theme `}
                           name="message"

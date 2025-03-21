@@ -7704,6 +7704,7 @@ div#wave .dot:nth-child(3) {
 @media (max-width: 768px) {
   .qt-key-feature {
     grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    text-align: left;
   }
 }
 
@@ -7717,8 +7718,16 @@ div#wave .dot:nth-child(3) {
   bottom: 0;
   max-width: 30vw; /* Responsive width */
   height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 
+.qt-girl-img img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure image does not exceed container */
+  max-height: 100%;
+}
 @media (max-width: 1024px) {
   /* Tablets */
   .qt-girl-img {
@@ -7758,21 +7767,21 @@ div#wave .dot:nth-child(3) {
   height: 100%;
 }
 
-
-
 .schedule-grid {
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr; /* Default: 1 column for mobile */
 }
 
-@media (min-width: 640px) { /* Small devices (sm) */
+@media (min-width: 640px) {
+  /* Small devices (sm) */
   .schedule-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 }
 
-@media (min-width: 1024px) { /* Large devices (lg) */
+@media (min-width: 1024px) {
+  /* Large devices (lg) */
   .schedule-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
   }
