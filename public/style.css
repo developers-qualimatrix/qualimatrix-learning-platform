@@ -3987,7 +3987,6 @@ body textarea {
 
 .qt-form .qt-description {
   max-width: 900px;
-  margin-bottom: 50px;
 }
 
 .qt-form .contact-form {
@@ -4705,7 +4704,7 @@ textarea:focus {
 }
 
 .qt-form-wrap {
-  padding: 8rem 5rem;
+  padding: 6rem 3rem;
 }
 
 .qt-form-wrap.light-theme {
@@ -7788,14 +7787,15 @@ div#wave .dot:nth-child(3) {
 }
 
 .schedule-card {
-  width: 300px;
-  max-width: 300px;
+  width: 100%; /* Ensure it takes full grid cell width */
+  min-width: 250px;
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-sizing: border-box; /* Prevent overflow from padding */
 }
 
 .schedule-card:hover {

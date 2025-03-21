@@ -93,33 +93,7 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
                 Please select a date to schedule your session.
               </p>
 
-              {/* 🗓️ Weekly Schedule Selection */}
-              {/* <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "auto auto auto",
-                  gap: "16px",
-                }}
-                className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5 qt-description"
-              >
-                {weekData.map((entry: any, index) => (
-                  <div
-                    style={{ width: "300px" }}
-                    key={index}
-                    className={`p-4 border rounded-lg shadow-sm cursor-pointer transition duration-300 ${
-                      selectedSchedule === entry.date
-                        ? "border-2 border-blue-500 bg-blue-100"
-                        : "bg-gray-100 hover:border-blue-400"
-                    }`}
-                    onClick={() => handleScheduleSelect(entry.date)}
-                  >
-                    <p className="text-lg font-medium text-gray-900">
-                      <strong> {entry.date}</strong>
-                    </p>
-                    <p className="text-gray-700">{entry.time}</p>
-                  </div>
-                ))}
-              </div> */}
+              
 
               <div className="schedule-grid qt-description my-5">
                 {weekData.map((entry: any, index) => (
@@ -130,10 +104,10 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
                     }`}
                     onClick={() => handleScheduleSelect(entry.date)}
                   >
-                    <p className="text-lg font-medium text-gray-900">
+                    <p className="text-lg font-medium text-gray-900 mb-0">
                       <strong>{entry.date}</strong>
                     </p>
-                    <p className="text-gray-700">{entry.time}</p>
+                    <p className="text-gray-700 mb-0">{entry.time}</p>
                   </div>
                 ))}
               </div>
@@ -144,7 +118,7 @@ const ScheduleModal: React.FC<ScheduleProps> = (props) => {
               )}
 
               {/* 📩 Submit Button */}
-              <div className="w-100 d-md-flex justify-content-center mt-5">
+              <div className="w-100 d-md-flex justify-content-center">
                 <button className="qt-cissp-hero-btn " onClick={handleSubmit}>
                   Register Now
                 </button>

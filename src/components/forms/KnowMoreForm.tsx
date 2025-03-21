@@ -40,9 +40,9 @@ const validationSchema = Yup.object().shape({
       "Phone can start with '+' and contain only numbers, minimum 10 digits and maximum 15 digits."
     )
     .required("Phone is required"),
-  company: Yup.string().required("Company name is required"),
-  website: Yup.string().required("website is required"),
-  message: Yup.string().required("Please Describe Message"),
+  // company: Yup.string().required("Company name is required"),
+  // website: Yup.string().required("website is required"),
+  // message: Yup.string().required("Please Describe Message"),
   selectedCountry: Yup.string().required("Please Select Your Country"),
   check: Yup.boolean()
     .oneOf([true], "You must accept the terms and conditions to proceed.")
@@ -299,7 +299,7 @@ const KnowMoreForm: React.FC<KnowMoreProps> = (props) => {
                     <div className="field-wrap2 w-100">
                       <LinearBorder>
                         <textarea
-                          placeholder="Describe Your Experience*"
+                          placeholder="Describe Your Experience"
                           rows={10}
                           className={`field-input w-100 ${theme}-theme `}
                           name="message"

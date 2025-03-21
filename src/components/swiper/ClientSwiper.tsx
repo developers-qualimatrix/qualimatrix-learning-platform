@@ -46,19 +46,27 @@ const ClientSwiper = () => {
       imagePath: "/assets/home/male-client.png",
     },
     {
-      name: "Floyd Miles",
+      name: "Rebecca Jones",
       // country: "Prep Monkey",
       rating: 5,
       description:
-        "This course was very insightful. My tutor was skilled and knew what he was teaching. I am glad I chose to learn from Qualimatrix. ",
+        "I have taken many courses but this portal stands out from all because: The instructor really knew what he was teaching, Complex topics were so easily understood, and the Support desk team was really good. Worth the money and time",
       imagePath: "/assets/home/male-client.png",
     },
     {
-      name: "Courtney Henry",
+      name: "Alice Paul",
       // country: "Ylanes",
       rating: 5,
       description:
-        " I didn't expect this course to be this amazing. Initially, I was uncomfortable as it was group training, but my tutor was very supportive. He made sure I was comfortable and maximizing my learning.",
+        " The interactive elements helped me engage in taking different tests. This builds my skills and knowledge. The portal is very helpful and good for professional skill development. Highly recommended!",
+      imagePath: "/assets/home/male-client.png",
+    },
+    {
+      name: "Peter Brown",
+      // country: "Ylanes",
+      rating: 5,
+      description:
+        " Qualimatrix provided me with a super tutor for such a complex course. He personally adopted different teaching methods to make sure students were learning as taught. It was amazing and I feel confident with my skills now. ",
       imagePath: "/assets/home/male-client.png",
     },
   ];
