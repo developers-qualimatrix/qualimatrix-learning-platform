@@ -31,7 +31,7 @@ const validationSchema = Yup.object().shape({
     .required("Agreement to terms is required"),
   // message: Yup.string().required("Message is required"),
   location: Yup.string().required("Location is required"),
-  wheretofindus: Yup.string().required("Please Select Dedicated Resources"),
+  // wheretofindus: Yup.string().required("Please Select Dedicated Resources"),
 });
 
 const supabase = createSupabaseBrowserClient();
@@ -178,7 +178,7 @@ const CorporateTrainingForm = () => {
                     <LinearBorder>
                       <input
                         type="text"
-                        placeholder="Location"
+                        placeholder="Location*"
                         className={`field-input ${theme}-theme`}
                         name="location"
                         // required

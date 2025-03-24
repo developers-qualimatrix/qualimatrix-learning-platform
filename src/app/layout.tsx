@@ -33,7 +33,6 @@ export default function RootLayout({
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/vikas-narwariya/qualimatrix-web-css/style-v27.css"
         />
-
         <link
           rel="stylesheet"
           type="text/css"
